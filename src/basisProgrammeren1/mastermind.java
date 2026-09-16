@@ -1,10 +1,12 @@
 package basisProgrammeren1;
 
+import java.util.Scanner;
+
 public class mastermind {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Scanner sc = new Scanner(System.in); {
 	}
 //	Pionnen:
 		String blauwePion = "blauw";
@@ -133,5 +135,15 @@ public class mastermind {
 		String rij10CheckVak2 = "";
 		String rij10CheckVak3 = "";
 		String rij10CheckVak4 = "";
+		
+		System.out.println("guess 4 colors 1 for 1");
+		
+		rij1Vak1 = sc .next();
+		rij1Vak2 = sc .next();
+		rij1Vak3 = sc .next();
+		rij1Vak4 = sc .next();
+		
 
+		
+	}
 }
