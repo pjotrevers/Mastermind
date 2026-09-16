@@ -34,11 +34,10 @@ public class mastermind {
 		String rij3Vak2 = "";
 		String rij3Vak3 = "";
 		String rij3Vak4 = "";
-		String rij3Vak4 = "";
 
-		String rij4Vak4 = "";
-		String rij4Vak4 = "";
-		String rij4Vak4 = "";
+		String rij4Vak1 = "";
+		String rij4Vak2 = "";
+		String rij4Vak3 = "";
 		String rij4Vak4 = "";
 
 		String rij5Vak1 = "";
