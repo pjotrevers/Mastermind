@@ -138,12 +138,22 @@ public class mastermind {
 		
 		System.out.println("guess 4 colors 1 for 1");
 		
+//		input
 		rij1Vak1 = sc .next();
 		rij1Vak2 = sc .next();
 		rij1Vak3 = sc .next();
 		rij1Vak4 = sc .next();
 		
-
+//		checking
+		if (rij1Vak1 == verborgenRijVak1);
+			System.out.println(zwartePin);
+		if (rij1Vak2 == verborgenRijVak2);
+			System.out.println(zwartePin);
+		if (rij1Vak3 == verborgenRijVak3);
+			System.out.println(zwartePin);
+		if (rij1Vak4 == verborgenRijVak4);
+			System.out.println(zwartePin);
+//		output
 		
 	}
 }
