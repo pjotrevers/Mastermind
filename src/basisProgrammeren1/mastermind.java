@@ -15,9 +15,9 @@ public class mastermind {
 		String oranjePion = "oranje";
 
 //		Pinnen:
-		String zwartePin = "leeg";
-		String wittePin = "leeg";
-		String geenPin = "leeg";
+		String zwartePin = "zwart";
+		String wittePin = "wit";
+		String legePin = "leeg";
 
 //		Rijvakken:
 		String rij1Vak1 = "";
