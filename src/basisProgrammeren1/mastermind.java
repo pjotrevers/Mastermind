@@ -145,15 +145,61 @@ public class mastermind {
 		rij1Vak4 = sc .next();
 		
 //		checking
-		if (rij1Vak1 == verborgenRijVak1);
-			System.out.println(zwartePin);
-		if (rij1Vak2 == verborgenRijVak2);
-			System.out.println(zwartePin);
-		if (rij1Vak3 == verborgenRijVak3);
-			System.out.println(zwartePin);
-		if (rij1Vak4 == verborgenRijVak4);
-			System.out.println(zwartePin);
-//		output
-		
+//		check1
+		if (rij1Vak1.equalsIgnoreCase(verborgenRijVak1))
+		{
+			System.out.println(zwartePin);			
+		}
+		else if( (rij1Vak1.equalsIgnoreCase(verborgenRijVak2))
+				|| (rij1Vak1.equalsIgnoreCase(verborgenRijVak3))
+				|| (rij1Vak1.equalsIgnoreCase(verborgenRijVak4)))
+		{
+			System.out.println(wittePin);			
+		}
+		else {
+			System.out.println(legePin);
+		}
+//		check2
+		if (rij1Vak2.equalsIgnoreCase(verborgenRijVak2))
+		{
+			System.out.println(zwartePin);			
+		}
+		else if( (rij1Vak2.equalsIgnoreCase(verborgenRijVak1))
+				|| (rij1Vak2.equalsIgnoreCase(verborgenRijVak3))
+				|| (rij1Vak2.equalsIgnoreCase(verborgenRijVak4)))
+		{
+			System.out.println(wittePin);			
+		}
+		else {
+			System.out.println(legePin);
+		}
+//		check3
+		if (rij1Vak3.equalsIgnoreCase(verborgenRijVak3))
+		{
+			System.out.println(zwartePin);			
+		}
+		else if( (rij1Vak3.equalsIgnoreCase(verborgenRijVak1))
+				|| (rij1Vak3.equalsIgnoreCase(verborgenRijVak2))
+				|| (rij1Vak3.equalsIgnoreCase(verborgenRijVak4)))
+		{
+			System.out.println(wittePin);			
+		}
+		else {
+			System.out.println(legePin);
+		}
+//		check4
+		if (rij1Vak4.equalsIgnoreCase(verborgenRijVak4))
+		{
+			System.out.println(zwartePin);			
+		}
+		else if( (rij1Vak4.equalsIgnoreCase(verborgenRijVak1))
+				|| (rij1Vak4.equalsIgnoreCase(verborgenRijVak2))
+				|| (rij1Vak4.equalsIgnoreCase(verborgenRijVak3)))
+		{
+			System.out.println(wittePin);			
+		}
+		else {
+			System.out.println(legePin);
+		}
 	}
 }
