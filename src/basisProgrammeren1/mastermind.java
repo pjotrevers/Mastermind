@@ -74,10 +74,10 @@ public class mastermind {
 		String rij10Vak4 = "";
 
 //		Verborgenrijvakken:
-		String verborgenRijVak1 = "blauw";
-		String verborgenRijVak2 = "groen";
-		String verborgenRijVak3 = "paars";
-		String verborgenRijVak4 = "oranje";
+		String verborgenRijVak1 = blauwePion;
+		String verborgenRijVak2 = groenePion;
+		String verborgenRijVak3 = paarsePion;
+		String verborgenRijVak4 = oranjePion;
 
 //		Spelers:
 		String speler1 = "";
@@ -190,7 +190,7 @@ public class mastermind {
 //		check4
 		if (rij1Vak4.equalsIgnoreCase(verborgenRijVak4))
 		{
-			System.out.println(zwartePin);			
+			System.out.println(zwartePin);
 		}
 		else if( (rij1Vak4.equalsIgnoreCase(verborgenRijVak1))
 				|| (rij1Vak4.equalsIgnoreCase(verborgenRijVak2))
