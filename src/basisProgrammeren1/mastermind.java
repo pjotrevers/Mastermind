@@ -124,8 +124,6 @@ public class mastermind {
 		String rij8CheckVak3 = "";
 		String rij8CheckVak4 = "";
 
-
-
 		String rij9CheckVak1 = "";
 		String rij9CheckVak2 = "";
 		String rij9CheckVak3 = "";
@@ -136,7 +134,7 @@ public class mastermind {
 		String rij10CheckVak3 = "";
 		String rij10CheckVak4 = "";
 		
-		System.out.println("guess 4 colors 1 for 1");
+		System.out.println("raad de kleuren 1 voor 1 \nkies uit (blauw/groen/geel/rood/paars/oranje) \nklik enter na elke kleur die je raad");
 		
 //		input
 		rij1Vak1 = sc .next();
