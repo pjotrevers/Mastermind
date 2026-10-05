@@ -47,8 +47,8 @@ public class mastermind {
 		boolean hasWon = false;
 
 		for (int i = 0; i < 10; i++) {
-			System.out.println(
-					"raad de kleuren 1 voor 1 \nkies uit (blauw/groen/geel/rood/paars/oranje) \nklik enter na elke kleur die je raad");
+			System.out.println("==========");
+			System.out.println("raad de kleuren 1 voor 1 \nkies uit (blauw/groen/geel/rood/paars/oranje) \nklik enter na elke kleur die je raad");
 			System.out.println("==========");
 			System.out.println("ronde: " + (i + 1));
 
@@ -108,12 +108,19 @@ public class mastermind {
 				System.out.println("==========");
 				System.out.println("Je hebt gewonnen!");
 				hasWon = true;
+				
+				if (hasWon = true) {
+					i=10;
+					}
 			}
+			
+			
 		}
 		if (hasWon == false) {
 			System.out.println("==========");
-			System.out.println("je hebt verloren");
 			System.out.println("je hebt al je pogingen gebruikt!");
+			System.out.println("je hebt verloren");
+			
 		}
 	}
 }
