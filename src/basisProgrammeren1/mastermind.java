@@ -10,39 +10,16 @@ public class mastermind {
 		{
 		}
 //	Pionnen:
-		String blauwePion = "blauw";
-		String groenePion = "groen";
-		String gelePion = "geel";
-		String rodePion = "rood";
-		String paarsePion = "paars";
-		String oranjePion = "oranje";
+		String[] kleur = {"blauw", "groen", "geel", "rood", "paars", "oranje"};;
 
 //		Pinnen:
-		String zwartePin = "zwart";
-		String wittePin = "wit";
-		String legePin = "leeg";
+        String[] pin = {"zwart", "wit", "leeg"}; 
 
-//		Rijvakken:
-		String rijVak1 = "";
-		String rijVak2 = "";
-		String rijVak3 = "";
-		String rijVak4 = "";
+//		Vakken:
+		String[] vak = new String[4];
 
 //		Verborgenrijvakken:
-		String verborgenRijVak1 = blauwePion;
-		String verborgenRijVak2 = groenePion;
-		String verborgenRijVak3 = paarsePion;
-		String verborgenRijVak4 = oranjePion;
-
-//		Spelers:
-		String speler1 = "";
-		String speler2 = "";
-
-//		Checkvakken:
-		String rijCheckVak1 = "";
-		String rijCheckVak2 = "";
-		String rijCheckVak3 = "";
-		String rijCheckVak4 = "";
+		 String[] verborgenVak = {kleur[0], kleur[1], kleur[2], kleur[3]};
 
 		boolean hasWon = false;
 
@@ -54,56 +31,55 @@ public class mastermind {
 
 //		input
 			System.out.println("-voer je 1ste pion keuze in");
-			rijVak1 = sc.next();
+			vak[0] = sc.next();
 			System.out.println("-voer je 2de pion keuze in");
-			rijVak2 = sc.next();
+			vak[1] = sc.next();
 			System.out.println("-voer je 3de pion keuze in");
-			rijVak3 = sc.next();
+			vak[2] = sc.next();
 			System.out.println("-voer je 4de pion keuze in");
-			rijVak4 = sc.next();
+			vak[3] = sc.next();
 
 //		checking
 //		check1
 			System.out.println("==========");
-			if (rijVak1.equalsIgnoreCase(verborgenRijVak1)) {
-				System.out.println(zwartePin);
-			} else if ((rijVak1.equalsIgnoreCase(verborgenRijVak2)) || (rijVak1.equalsIgnoreCase(verborgenRijVak3))
-					|| (rijVak1.equalsIgnoreCase(verborgenRijVak4))) {
-				System.out.println(wittePin);
+			if (vak[0].equalsIgnoreCase(verborgenVak[0])) {
+				System.out.println(pin[0]);
+			} else if ((vak[0].equalsIgnoreCase(verborgenVak[1])) || (vak[0].equalsIgnoreCase(verborgenVak[2]))
+					|| (vak[0].equalsIgnoreCase(verborgenVak[3]))) {
+				System.out.println(pin[1]);
 			} else {
-				System.out.println(legePin);
+				System.out.println(pin[2]);
 			}
 //		check2
-			if (rijVak2.equalsIgnoreCase(verborgenRijVak2)) {
-				System.out.println(zwartePin);
-			} else if ((rijVak2.equalsIgnoreCase(verborgenRijVak1)) || (rijVak2.equalsIgnoreCase(verborgenRijVak3))
-					|| (rijVak2.equalsIgnoreCase(verborgenRijVak4))) {
-				System.out.println(wittePin);
+			if (vak[1].equalsIgnoreCase(verborgenVak[1])) {
+				System.out.println(pin[0]);
+			} else if ((vak[1].equalsIgnoreCase(verborgenVak[0])) || (vak[1].equalsIgnoreCase(verborgenVak[2]))
+					|| (vak[1].equalsIgnoreCase(verborgenVak[3]))) {
+				System.out.println(pin[1]);
 			} else {
-				System.out.println(legePin);
+				System.out.println(pin[2]);
 			}
 //		check3
-			if (rijVak3.equalsIgnoreCase(verborgenRijVak3)) {
-				System.out.println(zwartePin);
-			} else if ((rijVak3.equalsIgnoreCase(verborgenRijVak1)) || (rijVak3.equalsIgnoreCase(verborgenRijVak2))
-					|| (rijVak3.equalsIgnoreCase(verborgenRijVak4))) {
-				System.out.println(wittePin);
+			if (vak[2].equalsIgnoreCase(verborgenVak[2])) {
+				System.out.println(pin[0]);
+			} else if ((vak[2].equalsIgnoreCase(verborgenVak[0])) || (vak[2].equalsIgnoreCase(verborgenVak[1]))
+					|| (vak[2].equalsIgnoreCase(verborgenVak[3]))) {
+				System.out.println(pin[1]);
 			} else {
-				System.out.println(legePin);
+				System.out.println(pin[2]);
 			}
 //		check4
-			if (rijVak4.equalsIgnoreCase(verborgenRijVak4)) {
-				System.out.println(zwartePin);
-			} else if ((rijVak4.equalsIgnoreCase(verborgenRijVak1)) || (rijVak4.equalsIgnoreCase(verborgenRijVak2))
-					|| (rijVak4.equalsIgnoreCase(verborgenRijVak3))) {
-				System.out.println(wittePin);
+			if (vak[3].equalsIgnoreCase(verborgenVak[3])) {
+				System.out.println(pin[0]);
+			} else if ((vak[3].equalsIgnoreCase(verborgenVak[0])) || (vak[3].equalsIgnoreCase(verborgenVak[1]))
+					|| (vak[3].equalsIgnoreCase(verborgenVak[2]))) {
+				System.out.println(pin[1]);
 			} else {
-				System.out.println(legePin);
-
+				System.out.println(pin[2]);
 			}
 
-			if (rijVak1.equalsIgnoreCase(verborgenRijVak1) && rijVak2.equalsIgnoreCase(verborgenRijVak2)
-					&& rijVak3.equalsIgnoreCase(verborgenRijVak3) && rijVak4.equalsIgnoreCase(verborgenRijVak4)) {
+			if (vak[0].equalsIgnoreCase(verborgenVak[0]) && vak[1].equalsIgnoreCase(verborgenVak[1])
+					&& vak[2].equalsIgnoreCase(verborgenVak[2]) && vak[3].equalsIgnoreCase(verborgenVak[3])) {
 
 				System.out.println("==========");
 				System.out.println("Je hebt gewonnen!");
