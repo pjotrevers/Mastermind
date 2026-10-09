@@ -17,27 +17,22 @@ public class mastermind {
 //		Vakken:
 		String[] vak = new String[4];
 
-//		Verborgenrijvakken:
+//		Verborgelnrijvakken:
 		 String[] verborgenVak = {kleur[0], kleur[1], kleur[4], kleur[5]};
 
 		boolean hasWon = false;
 
-		for (int i = 0; i < 10; i++) {
+		for (int l = 0; l < 10; l++) {
 			System.out.println("==========");
 			System.out.println("raad de kleuren 1 voor 1 \nkies uit (blauw/groen/geel/rood/paars/oranje) \nklik enter na elke kleur die je raad");
 			System.out.println("==========");
-			System.out.println("ronde: " + (i + 1));
+			System.out.println("ronde: " + (l + 1));
 
-//		input
-			System.out.println("-voer je 1ste pion keuze in");
-			vak[0] = sc.next();
-			System.out.println("-voer je 2de pion keuze in");
-			vak[1] = sc.next();
-			System.out.println("-voer je 3de pion keuze in");
-			vak[2] = sc.next();
-			System.out.println("-voer je 4de pion keuze in");
-			vak[3] = sc.next();
-
+//		input (for-loop
+			for (int i = 0; i < 4; i++) {
+			System.out.println("-voer je pion in");
+			vak[i] = sc.next();
+			}
 //		checking
 //		check1
 			System.out.println("==========");
@@ -85,7 +80,7 @@ public class mastermind {
 				hasWon = true;
 				
 				if (hasWon = true) {
-					i=10;
+					l=10;
 					}
 			}
 		}
