@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class mastermind {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		{
 		}
@@ -77,7 +76,7 @@ public class mastermind {
 			} else {
 				System.out.println(pin[2]);
 			}
-
+// 		winconditie
 			if (vak[0].equalsIgnoreCase(verborgenVak[0]) && vak[1].equalsIgnoreCase(verborgenVak[1])
 					&& vak[2].equalsIgnoreCase(verborgenVak[2]) && vak[3].equalsIgnoreCase(verborgenVak[3])) {
 
@@ -89,9 +88,8 @@ public class mastermind {
 					i=10;
 					}
 			}
-			
-			
 		}
+//		winconditie
 		if (hasWon == false) {
 			System.out.println("==========");
 			System.out.println("je hebt al je pogingen gebruikt!");
