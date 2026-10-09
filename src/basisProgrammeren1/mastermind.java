@@ -17,7 +17,7 @@ public class mastermind {
 //		Vakken:
 		String[] vak = new String[4];
 
-//		Verborgelnrijvakken:
+//		Verborgenrijvakken:
 		 String[] verborgenVak = {kleur[0], kleur[1], kleur[4], kleur[5]};
 
 		boolean hasWon = false;
