@@ -24,13 +24,14 @@ public class mastermind {
 
 		for (int l = 0; l < 10; l++) {
 			System.out.println("==========");
-			System.out.println("raad de kleuren 1 voor 1 \nkies uit (blauw/groen/geel/rood/paars/oranje) \nklik enter na elke kleur die je raad");
+			System.out.println("raad de kleuren 1 voor 1 \nkies uit: " + (kleur[0] + " " + kleur[1] + " " + kleur[2] + " " + kleur[3] + " " + kleur[4] + " " + kleur[5] ));
+			System.out.println("klik enter na elke kleur die je raad");
 			System.out.println("==========");
 			System.out.println("ronde: " + (l + 1));
 
 //		input (for-loop
 			for (int i = 0; i < 4; i++) {
-			System.out.println("-voer je pion in");
+			System.out.println("-voer in pion nummer " + (i + 1));
 			vak[i] = sc.next();
 			}
 //		checking
@@ -84,7 +85,7 @@ public class mastermind {
 					}
 			}
 		}
-//		winconditie
+//		verliesconditie
 		if (hasWon == false) {
 			System.out.println("==========");
 			System.out.println("je hebt al je pogingen gebruikt!");
