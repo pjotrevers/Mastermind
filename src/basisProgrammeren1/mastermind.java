@@ -6,8 +6,6 @@ public class mastermind {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		{
-		}
 //	Pionnen:
 		String[] kleur = {"blauw", "groen", "geel", "rood", "paars", "oranje"};;
 
@@ -80,7 +78,7 @@ public class mastermind {
 				System.out.println("Je hebt gewonnen!");
 				hasWon = true;
 				
-				if (hasWon = true) {
+				if (hasWon == true) {
 					l=10;
 					}
 			}
