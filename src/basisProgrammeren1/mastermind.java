@@ -15,7 +15,7 @@ public class mastermind {
 //		Vakken:
 		String[] vak = new String[4];
 
-//		Verborgenrijvakken:
+//		Verborgenvakken:
 		 String[] verborgenVak = {kleur[0], kleur[1], kleur[4], kleur[5]};
 
 		boolean hasWon = false;
@@ -27,7 +27,7 @@ public class mastermind {
 			System.out.println("==========");
 			System.out.println("ronde: " + (l + 1));
 
-//		input (for-loop
+//		input for-loop
 			for (int i = 0; i < 4; i++) {
 			System.out.println("-voer in pion nummer " + (i + 1));
 			vak[i] = sc.next();
@@ -80,7 +80,7 @@ public class mastermind {
 				
 				if (hasWon == true) {
 					l=10;
-					}
+				}
 			}
 		}
 //		verliesconditie
