@@ -6,7 +6,7 @@ public class mastermind {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-//	Pionnen:
+//		Pionnen:
 		String[] kleuren = {"blauw", "groen", "geel", "rood", "paars", "oranje"};;
 
 //		Pinnen:
@@ -27,13 +27,13 @@ public class mastermind {
 			System.out.println("==========");
 			System.out.println("ronde: " + (l + 1));
 
-//		input for-loop
+//			input for-loop
 			for (int i = 0; i < 4; i++) {
 			System.out.println("-voer in pion nummer " + (i + 1));
 			vakken[i] = sc.next();
 			}
-//		checking
-//		check1
+//			checking
+//			check1
 			System.out.println("==========");
 			if (vakken[0].equalsIgnoreCase(verborgenVakken[0])) {
 				System.out.println(pinnen[0]);
@@ -43,7 +43,7 @@ public class mastermind {
 			} else {
 				System.out.println(pinnen[2]);
 			}
-//		check2
+//			check2
 			if (vakken[1].equalsIgnoreCase(verborgenVakken[1])) {
 				System.out.println(pinnen[0]);
 			} else if ((vakken[1].equalsIgnoreCase(verborgenVakken[0])) || (vakken[1].equalsIgnoreCase(verborgenVakken[2]))
@@ -52,7 +52,7 @@ public class mastermind {
 			} else {
 				System.out.println(pinnen[2]);
 			}
-//		check3
+//			check3
 			if (vakken[2].equalsIgnoreCase(verborgenVakken[2])) {
 				System.out.println(pinnen[0]);
 			} else if ((vakken[2].equalsIgnoreCase(verborgenVakken[0])) || (vakken[2].equalsIgnoreCase(verborgenVakken[1]))
@@ -61,7 +61,7 @@ public class mastermind {
 			} else {
 				System.out.println(pinnen[2]);
 			}
-//		check4
+//			check4
 			if (vakken[3].equalsIgnoreCase(verborgenVakken[3])) {
 				System.out.println(pinnen[0]);
 			} else if ((vakken[3].equalsIgnoreCase(verborgenVakken[0])) || (vakken[3].equalsIgnoreCase(verborgenVakken[1]))
@@ -70,7 +70,7 @@ public class mastermind {
 			} else {
 				System.out.println(pinnen[2]);
 			}
-// 		winconditie
+// 			winconditie
 			if (vakken[0].equalsIgnoreCase(verborgenVakken[0]) && vakken[1].equalsIgnoreCase(verborgenVakken[1])
 					&& vakken[2].equalsIgnoreCase(verborgenVakken[2]) && vakken[3].equalsIgnoreCase(verborgenVakken[3])) {
 
