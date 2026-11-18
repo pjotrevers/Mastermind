@@ -10,7 +10,7 @@ public class mastermind {
 		String[] kleuren = {"blauw", "groen", "geel", "rood", "paars", "oranje"};;
 
 //		Pinnen:
-        String[] pinnen = {"zwart", "wit", "leeg"}; 
+        String[] pinnen = {"zwart", "wit", "leeg"};
 
 //		Vakken:
 		String[] vakken = new String[4];
